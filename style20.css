@@ -1,0 +1,53 @@
+body {
+    background-color: #0d0d0d;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container { width: 100%; max-width: 400px; text-align: center; }
+
+/* Saldo & Input */
+.saldo-area { background: #1a1a1a; padding: 15px; border-radius: 12px; margin-bottom: 15px; }
+input { padding: 10px; border-radius: 8px; border: 1px solid #333; background: #222; color: white; width: 80%; margin-bottom: 10px; }
+button { cursor: pointer; border: none; border-radius: 8px; font-weight: bold; }
+
+/* Display Box */
+.display-box {
+    background: #222;
+    padding: 30px 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #333;
+    min-height: 60px;
+}
+
+/* Grouping Input & Tombol */
+.input-harga-group { display: flex; gap: 10px; margin-bottom: 15px; }
+.input-item { flex: 1; }
+.input-item p { font-size: 11px; color: #aaa; margin-bottom: 5px; }
+.btn-group { display: flex; gap: 10px; }
+
+.btn-gacha { background: #ff4d6d; color: white; flex: 1; padding: 15px; }
+.btn-gacha-multi { background: #1e4d8c; color: white; flex: 1; padding: 15px; }
+
+/* Efek SHINY buat Rank S */
+.hoki {
+    color: #ffcc00;
+    font-weight: bold;
+    text-shadow: 0 0 10px #fff700, 0 0 20px #ffcc00;
+    animation: glow 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from { transform: scale(1); }
+    to { transform: scale(1.02); text-shadow: 0 0 15px #fff, 0 0 25px #ffcc00; }
+}
+
+/* Riwayat */
+.riwayat-container { background: #1a1a1a; padding: 15px; border-radius: 12px; text-align: left; margin-top: 20px; }
+ul { list-style: none; padding: 0; max-height: 200px; overflow-y: auto; }
+li { padding: 8px; border-bottom: 1px solid #333; font-size: 14px; }
+.btn-hapus { background: #444; color: white; font-size: 11px; padding: 5px 10px; margin-bottom: 10px; }

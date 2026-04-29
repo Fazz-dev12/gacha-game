@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gacha Simulator Realistis</title>
+    <link rel="stylesheet" href="style20.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="saldo-area">
+            <input type="number" id="inputSaldo" placeholder="Masukkan Saldo">
+            <button onclick="pasangSaldo()">PASANG SALDO</button>
+            <h2 id="saldoDisplay">Saldo Saat Ini: 0 DM</h2>
+        </div>
+
+        <div class="display-box" id="displayBox">
+            Siap untuk gacha? <br>
+            <span style="font-size: 14px; color: #888;">Pity: 0 / 50</span>
+        </div>
+
+        <div class="tombol-area">
+            <div class="input-harga-group">
+                <div class="input-item">
+                    <p>Harga 1x</p>
+                    <input type="number" id="harga1x" placeholder="Cth: 50">
+                </div>
+                <div class="input-item">
+                    <p>Harga 10x</p>
+                    <input type="number" id="harga10x" placeholder="Cth: 450">
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn-gacha" onclick="gachaCustom(1)">Gacha 1x</button>
+                <button class="btn-gacha-multi" onclick="gachaCustom(10)">Gacha 10x</button>
+            </div>
+        </div>
+
+        <div class="riwayat-container">
+            <h3>Riwayat Loot:</h3>
+            <button class="btn-hapus" onclick="hapusRiwayat()">Hapus Riwayat</button>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+
+    <script src="script20.js"></script>
+</body>
+</html>
